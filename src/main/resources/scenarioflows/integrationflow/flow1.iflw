@@ -303,6 +303,9 @@
             <bpmndi:BPMNShape bpmnElement="StartEvent_12" id="BPMNShape_StartEvent_12">
                 <dc:Bounds height="32.0" width="32.0" x="290.0" y="142.0"/>
             </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="CallActivity_18" id="BPMNShape_CallActivity_18">
+                <dc:Bounds height="60.0" width="100.0" x="574.0" y="128.0"/>
+            </bpmndi:BPMNShape>
             <bpmndi:BPMNShape bpmnElement="Participant_Process_1" id="BPMNShape_Participant_Process_1">
                 <dc:Bounds height="220.0" width="840.0" x="231.0" y="60.0"/>
             </bpmndi:BPMNShape>
@@ -312,9 +315,10 @@
             <bpmndi:BPMNShape bpmnElement="Participant_14" id="BPMNShape_Participant_14">
                 <dc:Bounds height="140.0" width="100.0" x="26.0" y="88.0"/>
             </bpmndi:BPMNShape>
-            <bpmndi:BPMNShape bpmnElement="CallActivity_18" id="BPMNShape_CallActivity_18">
-                <dc:Bounds height="60.0" width="100.0" x="574.0" y="128.0"/>
-            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_19" id="BPMNEdge_SequenceFlow_19" sourceElement="BPMNShape_CallActivity_18" targetElement="BPMNShape_CallActivity_16">
+                <di:waypoint x="624.0" xsi:type="dc:Point" y="158.0"/>
+                <di:waypoint x="866.0" xsi:type="dc:Point" y="158.0"/>
+            </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_17" id="BPMNEdge_SequenceFlow_17" sourceElement="BPMNShape_CallActivity_16" targetElement="BPMNShape_EndEvent_2">
                 <di:waypoint x="866.0" xsi:type="dc:Point" y="158.0"/>
                 <di:waypoint x="971.0" xsi:type="dc:Point" y="158.0"/>
@@ -330,10 +334,6 @@
             <bpmndi:BPMNEdge bpmnElement="MessageFlow_15" id="BPMNEdge_MessageFlow_15" sourceElement="BPMNShape_Participant_14" targetElement="BPMNShape_StartEvent_12">
                 <di:waypoint x="76.0" xsi:type="dc:Point" y="158.0"/>
                 <di:waypoint x="306.0" xsi:type="dc:Point" y="158.0"/>
-            </bpmndi:BPMNEdge>
-            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_19" id="BPMNEdge_SequenceFlow_19" sourceElement="BPMNShape_CallActivity_18" targetElement="BPMNShape_CallActivity_16">
-                <di:waypoint x="624.0" xsi:type="dc:Point" y="158.0"/>
-                <di:waypoint x="866.0" xsi:type="dc:Point" y="158.0"/>
             </bpmndi:BPMNEdge>
         </bpmndi:BPMNPlane>
     </bpmndi:BPMNDiagram>

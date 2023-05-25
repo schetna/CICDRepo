@@ -8,7 +8,7 @@ def Message processData(Message message) {
     def messageLog = messageLogFactory.getMessageLog(message);
     if(messageLog != null){
         messageLog.setStringProperty("Logging#1", "Printing Payload As Attachment")
-        messageLog.addAttachmentAsString("ResponsePayload:", body, "text/plain");
+        messageLog.addAttachmentAsString("ResponsePayload :", body, "text/plain");
      }
     return message;
 }
