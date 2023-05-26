@@ -55,7 +55,7 @@ Origin-Bundle-Name: testIflow
 SAP-RuntimeProfile: iflmap
 WorkspaceProfile: iflmap
 Bundle-Name: testIflow
-Bundle-Version: 1.0.5
+Bundle-Version: 1.0.6
 Bundle-ClassPath: .
 SAP-StartOrder: 1000
 SAP-NodeType: IFLMAP
